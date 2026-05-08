@@ -8,6 +8,7 @@ public class ObserverDemo {
         hospital.addObserver(new DoctorNotifier("Dr. Lim"));
         hospital.addObserver(new BillingNotifier());
         hospital.addObserver(new AuditNotifier());
+        hospital.addObserver(new UrgentOnlyDoctorNotifier("Dr. Miao"));
 
 // Add nurse using long way (need variable to remove later)
         WardNurseNotifier nurse = new WardNurseNotifier();
